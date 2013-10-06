@@ -1,4 +1,4 @@
 body {
     margin-top: 1em;
-    background: url('/public/bg.png') repeat-all;
+    background: url('/public/bg.png');
 }
