@@ -15,9 +15,9 @@ config = {
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
+                filename: path.join(process.env.OPENSHIFT_DATA_DIR, 'ghost.db')
             },
-            debug: true
+            debug: false
         },
 
         server: {
