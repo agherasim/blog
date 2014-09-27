@@ -10,7 +10,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: process.env.OPENSHIFT_APP_DNS,
+        url: 'http://' + process.env.OPENSHIFT_APP_DNS,
         mail: {},
         database: {
             client: 'sqlite3',
