@@ -1,7 +1,1 @@
-#!/bin/bash 
-
-echo "Exporting DNS Alias"
-export OPENSHIFT_APP_DNS_ALIAS="www.andreigherasim.net"
-
-echo "Exporting Node Environment (production)"
-export NODE_ENV=production
+#!/bin/bash
