@@ -1,4 +1,4 @@
-// # Ghost Configuration
+:/ # Ghost Configuration
 // Setup your Ghost install for various environments
 // Documentation can be found at http://support.ghost.org/config/
 
@@ -22,9 +22,9 @@ config = {
 
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: process.env.OPENSHIFT__IP || '127.0.0.1',
+            host: process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: process.env.OPENSHIFT__PORT || '2368'
+            port: process.env.OPENSHIFT_NODEJS_PORT || '2368'
         }
     },
 
